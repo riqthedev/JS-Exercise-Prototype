@@ -85,7 +85,7 @@ function Car(model, milesPerGallon) {
 }
 
 Car.prototype.fill = function(gallons){
-  return this.model
+ this.tank += gallons
 }
 
 /*
@@ -110,10 +110,10 @@ Baby.prototype.play = function(favoriteToy){
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. - Window 
-  2. - Implicit
-  3. - Explicit
-  4. - New
+  1. - Window = A error that reeturns all of the global objects in the program because it's not sure what you mean
+  2. - Implicit = When you call direct instance of a object
+  3. - Explicit = Manually binding a call to a object
+  4. - New = Creating a new instance of the object (template)
 */
 
 
